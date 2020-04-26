@@ -1,0 +1,98 @@
+body {
+  background: url('../images/black-notepad-on-black-table-3815760.jpg');
+  background-size: cover;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.wrapper1 {
+  display: grid;
+  grid-template-rows: repeat(10, 9.5vh);
+  grid-template-columns: repeat(10, 10vw);
+}
+
+.login-box {
+  grid-area: 4/5 / span 5 / span 5;
+  color: white;
+}
+
+.login-logo {
+  margin: 10px 20px;
+}
+
+.login-box p {
+  font-size: 60px;
+  margin: 1% -2%;
+
+  color: rgb(175, 175, 165);
+  margin-bottom: 10px;
+}
+
+.login-box .form-control {
+  width: 200px;
+  height: 40px;
+  background-color: rgba(133, 255, 247, 0.13);
+  border: solid rgba(155, 151, 151, 0.562) 1px;
+  font-size: 17px;
+}
+
+.login-box .col-12 {
+  display: block;
+  position: absolute;
+  margin: 2% -1%;
+}
+
+.login-box .pulsate-bck {
+  width: 230px;
+  height: 50px;
+  font-size: 20px;
+
+  -webkit-animation: pulsate-bck 4s ease-in-out infinite both;
+  animation: pulsate-bck 4s ease-in-out infinite both;
+
+  display: block;
+  border-radius: 25px;
+
+  outline: none;
+  border: none;
+  background-color: rgb(48, 182, 173);
+  left: 50px;
+  font-family: 'Julius Sans One', sans-serif;
+  color: #fff;
+  cursor: pointer;
+  transition: 3s;
+}
+
+@-webkit-keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .login-box {
+    grid-area: 2/3 / span 2 / span 2;
+  }
+}
